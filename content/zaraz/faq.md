@@ -85,6 +85,10 @@ You can load Google Tag Manager using Zaraz, but it is not recommended. Tools co
 
 Adding a tool to your website via a native Zaraz integration is always better than using an HTML snippet. HTML snippets usually depends on additional client-side requests, and require client-side code execution, which can slow down your website. They are often a security risk, as they can be hacked. Moreover, it can be very difficult to control their affect on the privacy of your visitors. Tools included in the Zaraz library are not suffering from these issues - they are fast, executed at the edge, and be controlled and restricted because they are sandboxed.
 
+#### How can I set my Custom HTML to be injected just once in my Single Page App (SPA) website?
+
+By default, if you have enabled "Single Page Application support" in Zaraz Settings, your Custom HTML will treat every new SPA page as a normal Pageview, potentially re-injecting your Custom HTML code unnecessarily. To prevent that, go to your Custom HTML action and choose "Add Field". Add the "Ignore SPA" field and set toggle the switch on. This will prevent your code from firing on every SPA pageview.
+
 ### Other tools
 
 #### I cannot find the tool I need on Zaraz.
