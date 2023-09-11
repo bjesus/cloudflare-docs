@@ -2,6 +2,10 @@
 link: "/zaraz/changelog/"
 productName: Zaraz
 entries:
+- publish_date: '2023-09-11'
+  title:
+  description: |-
+    * **Reddit**: The Reddit "Account ID" field now accepts the new Reddit format, i.e., "ax_xxxxx".
 - publish_date: '2023-09-06'
   title:
   description: |-
