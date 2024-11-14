@@ -192,7 +192,7 @@ curl -X POST https://api.cloudflare.com/client/v4/graphql \
 ### Explanation of the `curl` Components
 
 - **Authorization**: The `Authorization` header requires a Bearer token. Replace `$TOKEN` with your actual API token.
-- **Content-Type**: Set to `application/json` to indicate a JSON payload.
+- **Content-Type**: Set `application/json` to indicate a JSON payload.
 - **Data Payload**: This payload includes the GraphQL query and variable parameters, such as `zoneTag`, `start`, `end`, `limit`, and `orderBy`.
 
 This `curl` example will return a JSON response containing event counts and timestamps within the specified date range. Modify the `variables` values as needed for your use case.
